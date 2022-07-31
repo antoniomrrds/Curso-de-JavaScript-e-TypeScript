@@ -1,0 +1,17 @@
+table{
+    font-size: 15px;
+    margin: 0 auto 10px;
+    line-height: 1.3em;
+    width: 100%;
+
+}
+thead tr th{
+    background: rgb(248, 0, 0) ;
+    align-items:center;
+}
+tbody tr td{
+    padding-right: 15px;
+    background: black ;
+    color:white;
+    padding: 5px;
+}

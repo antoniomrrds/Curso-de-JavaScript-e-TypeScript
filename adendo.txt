@@ -1,2 +1,10 @@
 Repositorio do curso-js
 https://github.com/luizomf/curso-js
+
+
+biblioteca 
+Math
+Para arendondar use :
+ Math.ceil => para cima 
+ Math.floor => para baixo
+ Math.round => ele decide para o inteiro mais proximo	
