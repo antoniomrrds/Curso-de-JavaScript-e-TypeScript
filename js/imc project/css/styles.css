@@ -2,6 +2,8 @@
 :root {
     --primary-color: blueviolet;
     --primary-color-dark: rgb(96, 6, 181);
+    --secondary-color:#1ABC9C;
+    --secondary-color-dark:#16A085;
 }
 
 * {
