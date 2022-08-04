@@ -76,3 +76,12 @@ label {
 }
 
 
+.tag{
+    background: red;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    border: pink 2px solid;
+    margin: 5px;
+  }
+
+

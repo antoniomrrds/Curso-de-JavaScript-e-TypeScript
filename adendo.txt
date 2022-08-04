@@ -8,3 +8,9 @@ Para arendondar use :
  Math.ceil => para cima 
  Math.floor => para baixo
  Math.round => ele decide para o inteiro mais proximo	
+
+
+fors exemplos
+For clássico Geralmente com iteráveis (array ou strings)
+For in - Retorna o índice ou chave (string, array ou objetos)
+For of - Retorna o valor em si (iteráveis, arrays ou strings)
