@@ -1,0 +1,45 @@
+@media screen and (max-width: 700px) {
+    body {
+        transition: all 5s ease-in-out;
+        background: var(--secondary-color);
+    }
+
+    .container {
+
+        margin: 50px 20px 50px 20px;
+
+    }
+
+    input[type='text']:focus {
+        outline: 2px solid var(--secondary-color);
+    }
+
+    li {
+        text-shadow: 1px 1px var(--secondary-color-dark);
+    }
+
+    li::before {
+        color: var(--secondary-color-dark);
+    }
+
+    .btn-tasks {
+        background: var(--secondary-color);
+    }
+
+    .btn-tasks:hover {
+        box-shadow: 10px 10px 10px black;
+        outline: 2px solid var(--secondary-color-dark);
+    }
+
+    .delete {
+        background: var(--secondary-color);
+    }
+
+    .delete:hover {
+        outline: 2px solid var(--secondary-color-dark);
+        color: var(--secondary-color-dark)
+    }
+
+
+
+}
