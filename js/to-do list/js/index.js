@@ -43,8 +43,9 @@ const list = (() => {
 
   const getTasks = (() => {
     const tasks = localStorage.getItem("tasks");
+    if(tasks == null)return;
     const taskList = JSON.parse(tasks);
-
+    console.log(taskList)
     for (let task of taskList) {
       createTaks(task);
     }
