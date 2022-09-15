@@ -23,3 +23,8 @@ store/create = create
 delete = delete
 show = show one data
 update = update
+
+Sequelize 
+
+seeds => fazer inserçãp de dados no banco 
+migrate => criação de tabelas
