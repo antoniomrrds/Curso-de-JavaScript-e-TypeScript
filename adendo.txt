@@ -28,3 +28,5 @@ Sequelize
 
 seeds => fazer inserçãp de dados no banco 
 migrate => criação de tabelas
+
+apos as migrates serem criadas e voce precisar fazer alguma alteração e  so lembrar de criar uma nova migrate em caso de produção 
