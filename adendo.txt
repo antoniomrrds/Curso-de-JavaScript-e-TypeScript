@@ -30,3 +30,39 @@ seeds => fazer inserçãp de dados no banco
 migrate => criação de tabelas
 
 apos as migrates serem criadas e voce precisar fazer alguma alteração e  so lembrar de criar uma nova migrate em caso de produção 
+
+bash executavel test.sh
+
+example
+
+#!/bin/bash
+npm run build
+git add .
+
+read message
+echo "commit message : "
+git commit -am "$message"
+git push
+ssh ipDoServidor o dominio \
+  'git -C /home/user/aplicacao/' \
+  'pull origin master && ' \
+  'pm2 restart nome da aplicaçao && sudo systemctl restart nginx'
+
+dar permissao executavel 
+ sudo chmod +x  destino e o nome do arquivo.sh
+
+
+typescript
+
+eslint
+
+npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+
+prettier 
+
+npm i prettier eslint-config-prettier eslint-plugin-prettier -D
+
+
+para iniciar as configurações do ts =npx tsc --init
+para build = npx tsc
+
