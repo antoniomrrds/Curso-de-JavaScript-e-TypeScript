@@ -52,6 +52,8 @@ dar permissao executavel
  sudo chmod +x  destino e o nome do arquivo.sh
 
 
+
+
 typescript
 
 eslint
@@ -59,8 +61,9 @@ eslint
 npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
 
 prettier 
-
-npm i prettier eslint-config-prettier eslint-plugin-prettier -D
+  npm i prettier eslint-config-prettier eslint-plugin-prettier -D
+--react
+   npm i prettier eslint  babel-eslint eslint-config-prettier eslint-plugin-prettier -D
 
 
 para iniciar as configurações do ts =npx tsc --init
