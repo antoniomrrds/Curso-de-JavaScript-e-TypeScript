@@ -69,3 +69,10 @@ prettier
 para iniciar as configurações do ts =npx tsc --init
 para build = npx tsc
 
+linux 
+
+-- como copiar pasta
+rsync -havi --progress --exclude node_modules --exlude .git  react-base/ /home/scorpion/projects/consumeapi
+
+
+
