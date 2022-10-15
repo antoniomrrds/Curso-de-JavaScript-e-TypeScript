@@ -55,6 +55,7 @@ dar permissao executavel
 
 
 typescript
+ atulaizar pacotes = npx npm-check -u
 
 eslint
 
