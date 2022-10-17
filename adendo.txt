@@ -16,6 +16,11 @@ For in - Retorna o índice ou chave (string, array ou objetos)
 For of - Retorna o valor em si (iteráveis, arrays ou strings)
 
 
+
+node 
+
+atulaizar pacotes = npx npm-check -u
+
 API method name
 
 index = list the data
@@ -55,7 +60,7 @@ dar permissao executavel
 
 
 typescript
- atulaizar pacotes = npx npm-check -u
+ 
 
 eslint
 
@@ -74,6 +79,17 @@ linux
 
 -- como copiar pasta
 rsync -havi --progress --exclude node_modules --exlude .git  react-base/ /home/scorpion/projects/consumeapi
+
+Jest 
+
+npx jest --init
+
+typescript => {
+
+    npx ts-jest config:init
+
+}
+
 
 
 
