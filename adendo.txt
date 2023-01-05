@@ -84,12 +84,24 @@ Jest
 
 npx jest --init
 
+cobertura de tests
+npx jest  --coverage
+
+script node
+"test:silent":"jest --watchAll --silent --noStackTrace"
+
+script resumido
+ "test:coverage":"jest --coverage  --silent --noStackTrace"
+ 
 typescript => {
 
     npx ts-jest config:init
 
 }
 
+NextJS
+SSR => server-side rendering
+SSG => static site generation
 
 
 
