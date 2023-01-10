@@ -16,7 +16,7 @@ services:
       - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: teste123
-      MYSQL_DATABASE: db_knex
+      MYSQL_DB: db_knex
       MYSQL_USER: scorpion
       MYSQL_PASSWORD: teste123
       TZ: America/Sao_Paulo
