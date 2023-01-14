@@ -1,0 +1,50 @@
+absolute size
+
+px => não depende de nenhum valor ou seja e o  valor atribuido a ela
+
+ex:
+ .pai{
+  font-size : 50px
+ }
+
+relative size
+
+
+em  => depende do valor atribuido ao pai;
+ex: 
+ .pai{
+  font-size : 50px
+ }
+
+ .p {
+  font-size: 2em; (2 * 50px) = 100px
+ }
+
+ rem => depende do valor atribuido ao root;
+
+  Quando deixamos o valor de 100% no root quer dizer que vai pegar o valor do navegador atribuido o total
+  Quando deixamos o valor com 62.5% equivale a 16*0.625 = 10px 
+ ex:
+
+ html{
+  font-size : 10px | 62.5%; 
+ }
+
+ .p {
+  font-size: 1rem; (1 * 20px) = 10px
+ }
+
+vw => Relativo a  1% do tamanho da largura do viewport;
+ex: 
+ .pai{
+  font-size : 50px;
+  width: 100vw; (total da tela);
+ }
+
+ vh => Relativo a  1% do tamanho da altura do viewport;
+ex: 
+ .pai{
+  font-size : 50px;
+  width: 100vw; (total de largura);
+  height: 100vh;(total de altura)
+ }
