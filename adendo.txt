@@ -54,13 +54,9 @@ ssh ipDoServidor o dominio \
   'pm2 restart nome da aplicaçao && sudo systemctl restart nginx'
 
 dar permissao executavel 
- sudo chmod +x  destino e o nome do arquivo.sh
-
-
-
+sudo chmod +x  destino e o nome do arquivo.sh
 
 typescript
- 
 
 eslint
 
@@ -106,6 +102,67 @@ typescript => {
     npx ts-jest config:init
 
 }
+==========config-typescript===========
+Por que usar Husky e Lint-Staged?
+O que o Husky usa é o Git Hooks  , que são scripts executados em determinados momentos, como antes de um commit, push, etc...
+
+Por exemplo, o script pre-commitnos permite executar um script que executa o Linter antes de finalizar um commit e nos diz se há erros ou não e para garantir que o código que é carregado no repositório segue as regras de estilo.
+
+Por outro lado, Lint-Staged nos permite executar scripts nos arquivos que serão carregados no repositório, ou seja, apenas nos arquivos que modificamos, não em todos os arquivos do projeto. Entende-se que o resto dos arquivos que não tocamos já estão bem e não precisam ser revisados.
+======configs======
+npm i -D husky lint-staged
+npm set-script prepare 'huscky install'
+
+Configurando o Husky e o Lint-stage
+Criar um arquivo .lintstagedrc na raiz do nosso projeto, com o seguinte conteúdo:
+
+{
+  "*.{js,jsx,ts,tsx}": ["eslint --fix", "git add"]
+}
+Aqui, estamos informando que, para arquivos com a extensão js, jsx, tse tsx, execute o comando eslint --fixe confirme as alterações.
+
+Agora em nosso package.jsonadicionamos um script que podemos chamar prepare. Você pode adicioná-lo na seção scriptsou executar o seguinte comando:
+
+npm set-script prepare "husky install"
+Isso nos permite configurar o Husky mais rapidamente executando:
+
+npm run prepare
+Isso instala os git hooks dentro da pasta .huskyrecém-criada.
+
+Adicione o gancho de pré-confirmação
+Agora vamos adicionar o hook pre-commit, para que antes de fazer um commit, o script Lint-Staged seja executado. Fazemos isso com o seguinte comando:
+
+npx husky add .husky/pre-commit "npx lint-staged"
+Isso cria o arquivo .husky/pre-commitcom o seguinte conteúdo:
+
+#!/usr/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx lint-staged
+Configurando o linter
+Temos o anzol mas não temos linter configurado. Vamos consertar isso. Executamos o seguinte comando para instalar e configurar o ESlint rapidamente:
+
+npx eslint --init
+Escolha as opções de configuração de sua preferência.
+
+Agora se você fizer um commit e modificar um arquivo com extensão js, jsx, tsou tsx, o script Lint-Staged será executado e o comando será executado eslint --fixe as alterações serão adicionadas ao commit.
+
+Adicione o gancho pré-empurrar
+Agora vamos adicionar o gancho de pré-push, para que antes de fazer um push, os scripts que determinamos sejam executados, como por exemplo, que os testes sejam lançados e somente se eles passarem, o código será finalmente carregado no repositório. faça isso com o seguinte comando:
+
+npx husky add .husky/pre-push "npm run test"
+
+=====conventional=commits====== 
+
+This linter can work by standalone. But if you have husky 5 installed, because husky 5 will ignore the .git/hooks/commit-msg so a .husky/commit-msg need to be added manually:
+
+npx husky add .husky/commit-msg ".git/hooks/commit-msg \$1"
+Show the file content of .husky/commit-msg to make sure it has been added successfully otherwise do it manually.
+
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+.git/hooks/commit-msg $1
 
 
 ----------------StoryBook-------------
