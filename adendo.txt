@@ -9,13 +9,10 @@ Para arendondar use :
  Math.floor => para baixo
  Math.round => ele decide para o inteiro mais proximo	
 
-
 fors exemplos
 For clássico Geralmente com iteráveis (array ou strings)
 For in - Retorna o índice ou chave (string, array ou objetos)
 For of - Retorna o valor em si (iteráveis, arrays ou strings)
-
-
 
 node 
 
@@ -103,6 +100,10 @@ typescript => {
 
 }
 ==========config-typescript===========
+  npm init -y
+  npm i git-commit-msg-linter
+  npm i -D typescript @types/node
+  tsc --init
 Por que usar Husky e Lint-Staged?
 O que o Husky usa é o Git Hooks  , que são scripts executados em determinados momentos, como antes de um commit, push, etc...
 
