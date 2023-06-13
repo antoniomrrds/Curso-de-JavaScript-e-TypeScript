@@ -124,7 +124,7 @@ Aqui, estamos informando que, para arquivos com a extensão js, jsx, tse tsx, ex
 
 Agora em nosso package.jsonadicionamos um script que podemos chamar prepare. Você pode adicioná-lo na seção scriptsou executar o seguinte comando:
 
-npm set-script prepare "husky install"
+npm pkg set scripts.prepare="husky install"
 Isso nos permite configurar o Husky mais rapidamente executando:
 
 npm run prepare
