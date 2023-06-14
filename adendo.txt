@@ -104,6 +104,8 @@ typescript => {
   npm i git-commit-msg-linter
   npm i -D typescript @types/node
   tsc --init
+  npm i -D ts-jest jest @types/jest
+
 Por que usar Husky e Lint-Staged?
 O que o Husky usa é o Git Hooks  , que são scripts executados em determinados momentos, como antes de um commit, push, etc...
 
