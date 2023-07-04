@@ -93,7 +93,13 @@ script node
 
 script resumido
  "test:coverage":"jest --coverage  --silent --noStackTrace"
- 
+
+===========jest-config==========
+--silent => serve para nao mostra os teste e sim a quantidade e os que passaram
+--watch => serve para rodar apenas os arquivos de testes modificados
+--findRelatedTests => serve para rodar apenas os arquivos de testes modificados mas nao fica em watch
+
+
 typescript => {
 
     npx ts-jest config:init
