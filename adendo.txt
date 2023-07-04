@@ -95,9 +95,13 @@ script resumido
  "test:coverage":"jest --coverage  --silent --noStackTrace"
 
 ===========jest-config==========
---silent => serve para nao mostra os teste e sim a quantidade e os que passaram
+--silent => serve para nao mostra os teste e sim a quantidade e os que passaram esconde os consoles.log
 --watch => serve para rodar apenas os arquivos de testes modificados
 --findRelatedTests => serve para rodar apenas os arquivos de testes modificados mas nao fica em watch
+--verbose => mostra o nome de todos os testes
+--colors => para mostrar as cores independente do terminal
+--noStackTrace => esconde a stack de erros
+
 
 
 typescript => {
