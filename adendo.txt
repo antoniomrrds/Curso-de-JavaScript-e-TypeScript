@@ -101,7 +101,15 @@ script resumido
 --verbose => mostra o nome de todos os testes
 --colors => para mostrar as cores independente do terminal
 --noStackTrace => esconde a stack de erros
+-- => significa que herdara as mesmas configs do test chamado
+--coverage => serve para pegar a cobertura dos tests
 
+example config 
+  "test": "jest --silent --colors --noStackTrace --passWithNoTests",
+   "test:unit": "npm test -- --watch -c jest-unit-config.js",
+   "test:integration": "npm test -- --watch -c jest-integration-config.js",
+   "test:staged": "npm test -- --findRelatedTests",
+   "test:ci": "npm test -- --coverage",
 
 
 typescript => {
