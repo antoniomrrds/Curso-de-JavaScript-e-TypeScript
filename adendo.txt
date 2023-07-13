@@ -103,6 +103,7 @@ script resumido
 --noStackTrace => esconde a stack de erros
 -- => significa que herdara as mesmas configs do test chamado
 --coverage => serve para pegar a cobertura dos tests
+--runInBand => serve para os teste rodaram um por vez e nao em paralelo
 
 example config 
   "test": "jest --silent --colors --noStackTrace --passWithNoTests",
