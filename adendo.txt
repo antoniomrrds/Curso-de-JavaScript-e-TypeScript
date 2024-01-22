@@ -112,6 +112,11 @@ example config
    "test:staged": "npm test -- --findRelatedTests",
    "test:ci": "npm test -- --coverage",
 
+debug-jest
+mostrar o resultado do mock
+loadUserSpy = jest.fn()
+console.log('loadUserSpy.calls:', loadUserSpy.mock.calls)
+console.log('loadUserSpy.results:', loadUserSpy.mock.results)
 
 typescript => {
 
